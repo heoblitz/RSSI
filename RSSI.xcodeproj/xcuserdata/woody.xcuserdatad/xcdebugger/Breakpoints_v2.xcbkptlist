@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1AD7D343-2C78-497B-ABEB-0510FE1392AF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5573A94-EE46-4E81-BC72-0D8BAA641818"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ExcelView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9F44218-B6D5-4BBF-B4A2-0873FD04661E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "writeExcel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D1F2E2D-ACD6-47B2-9645-8C41AF889545"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "writeExcel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AAE42E3-2E5D-4E09-9180-F9726CBECA95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "addExcel(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0ACB5FAC-C914-4DFF-B68A-DF32D520D139"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getRSSIMap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getRSSIMap()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355 - 722786d1814e755f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355 - e99c0c79e62f2b50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355 - 44ca7ba24480c155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355 - 44ca7ba24480c155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "47E1851C-D2CA-4A83-8F56-A6EC0FAB7355 - 7ab7d69b68a24324"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A8238B3-3EBE-4D77-A5E1-BBE917456A35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RSSI/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "getRSSIMap()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A8238B3-3EBE-4D77-A5E1-BBE917456A35 - 96e918a920ed5f18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "7A8238B3-3EBE-4D77-A5E1-BBE917456A35 - 722786d1814e751d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "7A8238B3-3EBE-4D77-A5E1-BBE917456A35 - 7ab7d69b68a24366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for RSSI.AirportManager.getRSSIMap() async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Int&gt;"
+                  moduleName = "RSSI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/woody/Documents/RSSI/RSSI/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
