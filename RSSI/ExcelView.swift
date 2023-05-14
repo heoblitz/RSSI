@@ -8,7 +8,6 @@
 import SwiftUI
 import SecurityFoundation
 
-
 struct ExcelRow: Identifiable {
   let id = UUID()
   var datas: [ExcelData]

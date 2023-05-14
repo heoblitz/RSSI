@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreML
 
 @main
 struct RSSIApp: App {

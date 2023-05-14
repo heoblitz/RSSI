@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreML
 
 struct MapView: View {
   var body: some View {
@@ -27,6 +28,26 @@ struct MapView: View {
 
         }
       }
+    }
+    .onAppear {
+
+      // Core ML 모델 로드
+      guard let model = try? RSSIModel(configuration: MLModelConfiguration()).model else {
+          fatalError("Failed to load Core ML model")
+      }
+
+      // 입력 데이터 생성
+      let inputData = RSSIModelInput(input: try! .init([-44, -54, -48, -50]))
+
+      // 모델 예측 수행
+      guard let prediction = try? model.prediction(from: inputData) else {
+          fatalError("Failed to make prediction")
+      }
+
+      // 예측 결과 가져오기
+      let outputData = prediction.featureNames
+      print(prediction.featureValue(for: "classLabel"))
+      print(outputData)
     }
   }
 }

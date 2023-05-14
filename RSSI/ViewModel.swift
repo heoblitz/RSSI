@@ -161,6 +161,7 @@ final class ViewModel: ObservableObject {
           }
         } catch let error {
           print(error)
+          return
         }
       }
     }
