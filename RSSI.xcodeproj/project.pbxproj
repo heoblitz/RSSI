@@ -14,7 +14,7 @@
 		EF2DC2F929D045800055DC28 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DC2F829D045800055DC28 /* MapView.swift */; };
 		EF34774129F827B800A463D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF34774029F827B800A463D7 /* ViewModel.swift */; };
 		EF810E382A10B08B0081D080 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF810E372A10B08B0081D080 /* CoreML.framework */; };
-		EF810E3A2A10B0CD0081D080 /* RSSIModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF810E392A10B0CD0081D080 /* RSSIModel.mlmodel */; };
+		EF810E3C2A11A5E90081D080 /* RSSIModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF810E3B2A11A5E90081D080 /* RSSIModel.mlmodel */; };
 		EFA131E629F4089900C61591 /* ExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA131E529F4089900C61591 /* ExcelView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		EF2DC2F829D045800055DC28 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EF34774029F827B800A463D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EF810E372A10B08B0081D080 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
-		EF810E392A10B0CD0081D080 /* RSSIModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RSSIModel.mlmodel; path = coreml/RSSIModel.mlmodel; sourceTree = SOURCE_ROOT; };
+		EF810E3B2A11A5E90081D080 /* RSSIModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RSSIModel.mlmodel; path = CoreML/RSSIModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		EFA131E529F4089900C61591 /* ExcelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 		EF0E5BB829BA0F9200AA0E82 /* RSSI */ = {
 			isa = PBXGroup;
 			children = (
-				EF810E392A10B0CD0081D080 /* RSSIModel.mlmodel */,
+				EF810E3B2A11A5E90081D080 /* RSSIModel.mlmodel */,
 				EF0E5BB929BA0F9200AA0E82 /* RSSIApp.swift */,
 				EF0E5BBB29BA0F9200AA0E82 /* RSSIListView.swift */,
 				EF2DC2F829D045800055DC28 /* MapView.swift */,
@@ -166,7 +166,7 @@
 				EF34774129F827B800A463D7 /* ViewModel.swift in Sources */,
 				EF0E5BBC29BA0F9200AA0E82 /* RSSIListView.swift in Sources */,
 				EF2DC2F929D045800055DC28 /* MapView.swift in Sources */,
-				EF810E3A2A10B0CD0081D080 /* RSSIModel.mlmodel in Sources */,
+				EF810E3C2A11A5E90081D080 /* RSSIModel.mlmodel in Sources */,
 				EFA131E629F4089900C61591 /* ExcelView.swift in Sources */,
 				EF0E5BBA29BA0F9200AA0E82 /* RSSIApp.swift in Sources */,
 			);

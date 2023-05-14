@@ -1,6 +1,5 @@
 import pandas as pd 
 import numpy as np
-import pickle
 import coremltools as ct
 
 from sklearn.neighbors import KNeighborsClassifier
@@ -22,13 +21,7 @@ classifier = KNeighborsClassifier(n_neighbors=3)
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(x_test)
 
-print(classifier.score(x_test, y_test))
+print("predict score", classifier.score(x_test, y_test))
 
-with open('model.pkl', 'wb') as f:
-  pickle.dump(classifier, f)
-
-with open('model.pkl', 'rb') as f:
-  model = pickle.load(f)
-
-coreml_model = ct.converters.sklearn.convert(model)
+coreml_model = ct.converters.sklearn.convert(classifier)
 coreml_model.save('RSSIModel.mlmodel')
