@@ -29,6 +29,12 @@ struct RSSIApp: App {
           }
       }
       .environmentObject(viewModel)
+      .onAppear {
+        self.viewModel.onAppear()
+      }
+      .onDisappear {
+        self.viewModel.onDisappear()
+      }
       .alert(self.viewModel.alertMessage, isPresented: self.$viewModel.isShowingAlert) {
         
       }

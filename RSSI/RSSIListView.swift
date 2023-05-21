@@ -87,11 +87,5 @@ struct RSSIListView: View {
       }
     }
     .padding()
-    .onAppear {
-      self.viewModel.onAppear()
-    }
-    .onDisappear {
-      self.viewModel.onDisappear()
-    }
   }
 }

@@ -16,6 +16,8 @@
 		EF810E382A10B08B0081D080 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF810E372A10B08B0081D080 /* CoreML.framework */; };
 		EF810E3C2A11A5E90081D080 /* RSSIModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF810E3B2A11A5E90081D080 /* RSSIModel.mlmodel */; };
 		EFA131E629F4089900C61591 /* ExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA131E529F4089900C61591 /* ExcelView.swift */; };
+		EFE21E462A171E4200DAC787 /* CoreMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE21E452A171E4200DAC787 /* CoreMLService.swift */; };
+		EFE21E482A171E6000DAC787 /* AirportSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE21E472A171E6000DAC787 /* AirportSerivce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EF810E372A10B08B0081D080 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		EF810E3B2A11A5E90081D080 /* RSSIModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RSSIModel.mlmodel; path = CoreML/RSSIModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		EFA131E529F4089900C61591 /* ExcelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelView.swift; sourceTree = "<group>"; };
+		EFE21E452A171E4200DAC787 /* CoreMLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLService.swift; sourceTree = "<group>"; };
+		EFE21E472A171E6000DAC787 /* AirportSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSerivce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				EF0E5BC229BA0F9300AA0E82 /* RSSI.entitlements */,
 				EF0E5BBF29BA0F9300AA0E82 /* Preview Content */,
 				EF34774029F827B800A463D7 /* ViewModel.swift */,
+				EFE21E452A171E4200DAC787 /* CoreMLService.swift */,
+				EFE21E472A171E6000DAC787 /* AirportSerivce.swift */,
 			);
 			path = RSSI;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF34774129F827B800A463D7 /* ViewModel.swift in Sources */,
+				EFE21E482A171E6000DAC787 /* AirportSerivce.swift in Sources */,
 				EF0E5BBC29BA0F9200AA0E82 /* RSSIListView.swift in Sources */,
+				EFE21E462A171E4200DAC787 /* CoreMLService.swift in Sources */,
 				EF2DC2F929D045800055DC28 /* MapView.swift in Sources */,
 				EF810E3C2A11A5E90081D080 /* RSSIModel.mlmodel in Sources */,
 				EFA131E629F4089900C61591 /* ExcelView.swift in Sources */,

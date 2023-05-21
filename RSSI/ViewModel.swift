@@ -7,72 +7,6 @@
 
 import SwiftUI
 
-actor ProcessWithLines {
-  private let process = Process()
-  private let stdin = Pipe()
-  private let stdout = Pipe()
-  private let stderr = Pipe()
-  private var buffer = Data()
-  private(set) var lines: AsyncLineSequence<FileHandle.AsyncBytes>?
-  
-  init() {
-    process.standardInput = stdin
-    process.standardOutput = stdout
-    process.standardError = stderr
-    process.launchPath = "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
-    process.arguments = ["-s"]
-  }
-  
-  func start() throws {
-    lines = stdout.fileHandleForReading.bytes.lines
-    try process.run()
-  }
-  
-  func terminate() {
-    process.terminate()
-  }
-  
-  func send(_ string: String) {
-    guard let data = "\(string)\n".data(using: .utf8) else { return }
-    stdin.fileHandleForWriting.write(data)
-  }
-}
-
-extension Collection {
-  subscript (safe index: Index) -> Element? {
-    return indices.contains(index) ? self[index] : nil
-  }
-}
-
-final class AirportManager {
-  static let command = "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
-  static let options = ["-s"]
-  
-  func getRSSIMap() async throws -> [String: Int] {
-    let process = ProcessWithLines()
-    try await process.start()
-    var outputs: [String] = []
-    
-    guard let lines = await process.lines else {
-      return [:]
-    }
-
-    for try await line in lines {
-      outputs.append(line)
-    }
-    
-    let map: [String: Int] = outputs.reduce(into: [:]) { dict, line in
-      let line = line.split(separator: " ").map(String.init)
-
-      guard let ssid = line[safe: 0], let rssi = line[safe: 1], let rssiValue = Int(rssi), rssiValue < 0 else { return }
-
-      dict[ssid] = rssiValue
-    }
-    return map
-  }
-}
-
-
 struct RissModel: Identifiable {
   let ssid: String
   var rssi: Int
@@ -99,7 +33,6 @@ struct RissModel: Identifiable {
 
 @MainActor
 final class ViewModel: ObservableObject {
-  private let airportManager = AirportManager()
   private var task: Task<Void, Error>?
   private var disconnectCount = 0
   
@@ -120,6 +53,7 @@ final class ViewModel: ObservableObject {
   }
   @Published var isShowingAlert: Bool = false
   @Published var updateTime: Date = Date()
+  @Published var selectedLabel: MLModelLabel?
 
   init() { }
   
@@ -128,7 +62,7 @@ final class ViewModel: ObservableObject {
       while true {
         do {
           try await Task.sleep(for: .milliseconds(100))
-          let rssiMap: [String: Int] = try await airportManager.getRSSIMap()
+          let rssiMap: [String: Int] = try await AirportService.shared.getRSSIMap()
           
           guard !rssiMap.isEmpty else { continue }
           
@@ -157,6 +91,12 @@ final class ViewModel: ObservableObject {
             } else {
               self.disconnectCount = 0
               self.rissModels = []
+            }
+            
+            let filteredRSSIs = self.filtersModels.map { Double($0.rssi) }
+            
+            if filteredRSSIs.count == 4 {
+              self.selectedLabel = CoreMLService.shared.predictLocation(features: filteredRSSIs)
             }
           }
         } catch let error {
